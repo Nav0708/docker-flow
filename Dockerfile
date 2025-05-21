@@ -50,6 +50,6 @@ EXPOSE 5000
 # Run the application.
 CMD python3 -m uvicorn app:app --host=0.0.0.0 --port=8001
 
-COPY requirements.txt .
+COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 CMD ["python", "app.py"]
