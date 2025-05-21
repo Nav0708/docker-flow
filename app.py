@@ -44,3 +44,5 @@ def read_heroes():
     with Session(engine) as session:
         heroes = session.exec(select(Hero)).all()
         return heroes
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
